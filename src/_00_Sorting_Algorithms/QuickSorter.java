@@ -15,13 +15,15 @@ public class QuickSorter extends Sorter {
 		//10. call the quickSort method with 0 and the length of the array minus one
 	}
 	
-	private void quickSort(int[] array, int low, int high, SortingVisualizer display) {
+	private void quickSort(int[] arr, int low, int high, SortingVisualizer display) {
 		//2. create two integer variables called i and j and set them equal
 		//   to low and high respectively.
+		int i = low;
+		int j = high;
        
         //3. create an integer called pivot and set it equal to the element
         //   in the array that is the halfway point between low and high
-
+		int pivot = arr[(low + high) / 2]; ///I DONT GET THE LANGAUGE, does it want the number inbetween low and high, or the index of the number inbetween low and high
         //4. make a while loop that goes while i is less than or equal to j
         
         	//5. make a while loop that increments i while 
