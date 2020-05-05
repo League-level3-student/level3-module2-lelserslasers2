@@ -33,7 +33,8 @@ public class _01_BinarySearch {
             }
             //6. return the value returned from a call to the binarySearch
             //   method. Use mid + 1 as the start, and pass in end.
-            return binarySearch(arr, mid + 1, end, value);
+           return binarySearch(arr, mid + 1, end, value);
+        
 		}
         //7. return -1 because the value was not found
         return -1;
