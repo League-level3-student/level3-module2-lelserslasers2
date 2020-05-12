@@ -23,7 +23,7 @@ public class _02_InterpolationSearch {
         //   value is less than or equal to the array element at end
 		while(start <= end && value >= arr[start] && value <= arr[end]) {
 			
-		}
+		
 		//4. If start is equal to end,
 		//     then check if the array element at start is equal to the value
 		//     and return start if it is, otherwise return -1.
@@ -49,13 +49,13 @@ public class _02_InterpolationSearch {
             //7. if the array element at position is less than value,
             //   then set start equal to position plus one
             if (arr[position] < value) {
-            	position = position + 1;
+            	start = position + 1;
             }
             //8. otherwise, set end equal to position minus one
             else {
-            	position = position - 1;
+            	end = position - 1;
             }
-          
+		}
         //9. Return -1 because the value was not found
         return -1;
     }

@@ -45,19 +45,46 @@ class _04_SearchTest {
 		_01_BinarySearch oo = new _01_BinarySearch();
 		
 		assertEquals(oo.binarySearch(words, 0, words.length-1, value), 2);
-		assertEquals(oo.binarySearch(words2, 0, words.length-1, value2), 3);
-		//assertEquals(oo.binarySearch(words3, 0, words.length-1, value3), 4);
+		assertEquals(oo.binarySearch(words2, 0, words2.length-1, value2), 3);
+		assertEquals(oo.binarySearch(words3, 0, words3.length-1, value3), 4);
 	}
 	
 	@Test
 	public void testInterpolationSearch() {
 		//3. use the assertEquals method to test your interpolation search method.
 		//   remember that the array must be sorted and evenly distributed
+		int[] words = {0, 1, 2, 3, 4, 5};
+		int value = 3;
+		
+		int[] words2 = {0, 2, 4, 6, 8, 10};
+		int value2 = 8;
+		
+		int[] words3 = {0, 100, 200, 300, 400, 500};
+		int value3 = 0;
+		
+		_02_InterpolationSearch oo = new _02_InterpolationSearch();
+		
+		assertEquals(oo.interpolationSearch(words, value), 3);
+		assertEquals(oo.interpolationSearch(words2, value2), 4);
+		assertEquals(oo.interpolationSearch(words3, value3), 0);
 	}
 	
 	@Test
 	public void testExponentialSearch() {
 		//4. use the assertEquals method to test your exponential search method.
 		//   remember that the array must be sorted
+		int[] words = {0, 1, 2, 3, 4, 5};
+		int value = 3;
+		
+		int[] words2 = {0, 2, 4, 6, 8, 11};
+		int value2 = 8;
+		
+		int[] words3 = {0, 100, 200, 350, 400, 500};
+		int value3 = 0;
+		
+		_03_ExponentialSearch oo = new _03_ExponentialSearch();
+		assertEquals(oo.exponentialSearch(words, value), 3);
+		assertEquals(oo.exponentialSearch(words2, value2), 4);
+		assertEquals(oo.exponentialSearch(words3, value3), 0);
 	}
 }

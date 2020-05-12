@@ -21,7 +21,7 @@ public class _01_BinarySearch {
 			int mid = (start + end)/2;
             //4. if the array element at mid is equal to value
             //   then return mid
-			if (mid == value) {
+			if (arr[mid] == value) {
 				return mid;
 			}
             //5. if the array element at mid is greater than value
